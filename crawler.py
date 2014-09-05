@@ -208,8 +208,8 @@ def send_mail(flats):
       </body>
     </html>
     """.format(body=body)
-    part1 = MIMEText(text, 'plain')
-    part2 = MIMEText(html, 'html')
+    part1 = MIMEText(text.encode('utf-8'), 'plain', 'utf-8')
+    part2 = MIMEText(html.encode('utf-8'), 'html', 'utf-8')
     msg.attach(part1)
     msg.attach(part2)
     s = smtplib.SMTP("smtp.gmail.com", 587)
