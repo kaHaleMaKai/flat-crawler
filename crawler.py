@@ -13,7 +13,7 @@ def get_connection():
     return sqlite3.connect('flats.db')
 
 def get_url():
-    return 'http://www.immobilienscout24.de/Suche/S-2/Wohnung-Miete/Hamburg/Hamburg/Winterhude_Uhlenhorst_St--Georg_St--Pauli_Rotherbaum_Ottensen_Othmarschen_Niendorf_Hoheluft-Ost_Hoheluft-West_Hammerbrook_Hamb--Altstadt_Hamm-Mitte_Hamm-Nord_Hamm-Sued_HafenCity_Eppendorf_Eimsbuettel_Eilbek_Altona-Nord/2,00-/50,00-/EURO--1500,00/-/3,6,7,8,40,118,113/-/-/-/-/-/-/-/-/-/-/true?enteredFrom=result_list#showRealEstate=76883186'
+    return 'http://www.immobilienscout24.de/Suche/S-2/Wohnung-Miete/Hamburg/Hamburg/Winterhude_Uhlenhorst_St--Georg_St--Pauli_Rotherbaum_Ottensen_Othmarschen_Hoheluft-Ost_Hoheluft-West_Hammerbrook_Hamb--Altstadt_Hamm-Mitte_Hamm-Nord_Hamm-Sued_HafenCity_Eppendorf_Eimsbuettel_Eilbek_Altona-Altstadt_Altona-Nord_Sternschanze/2,50-/55,00-/EURO--1050,00/-/3,6,7,8,40,118,113/-/-/-/true/-/-/-/-/-/-/true?enteredFrom=result_list#showRealEstate=76964837'
 
 def get_results(url):
     response = urllib.request.urlopen(url)

@@ -4,3 +4,4 @@ flats.db
 immo.html
 unit.py
 crawler.log
+*.pyc
